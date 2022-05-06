@@ -25,7 +25,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Nushell custom image (for nushell_odds_api_client) build and push
         id: docker_build_nushell_odds_api_client
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v3
         with:
           context: .
           push: true
